@@ -1,0 +1,51 @@
+name: project_akhir
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Package HTTP untuk melakukan permintaan API
+  http: ^1.0.0
+
+  # Paket ikon iOS (opsional jika tidak digunakan)
+  cupertino_icons: ^1.0.8
+
+  # Paket tambahan untuk pengembangan
+  provider: ^6.0.0 # Jika menggunakan state management seperti Provider
+  cached_network_image: ^3.2.1 # Untuk caching gambar dari internet
+  sqflite: ^2.0.0+4  # SQLite untuk penyimpanan data lokal
+  path_provider: ^2.0.11  # Untuk mencari lokasi file database
+  flutter_local_notifications: ^18.0.1
+  shared_preferences: ^2.0.15  # Untuk menyimpan session login
+  fluttertoast: ^8.2.1  # Menambahkan fluttertoast untuk menampilkan toast
+  encrypt: ^5.0.0  # Untuk enkripsi dan dekripsi kata sandi
+
+  # Tambahan dependensi Hive
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Menambahkan dependensi crypto untuk hashing
+  crypto: ^3.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+  # Dev dependencies Hive
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.5
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/loopy.jpg  # Menambahkan gambar loopy.jpg dari folder assets
